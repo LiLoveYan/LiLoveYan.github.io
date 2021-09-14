@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,24 +7,7 @@
 
 <body>
 
-	<p>局部变量计数。</p>
-	<button type="button" onclick="myFunction()">计数!</button>
-	<p id="demo">0</p>
 	<script>
-		var add = (function () {
-			var counter = 0;
-			return function () { return counter += 1; }
-		})();
-		function te() {
-			let a = 0;
-			return function () { return ++a };
-		}
-		let test = te();
-
-		console.log('%c [ test ]', 'font-size:13px; background:pink; color:#bf2c9f;', test)
-		function myFunction() {
-			document.getElementById("demo").innerHTML = test();
-		}
 	</script>
 
 </body>
